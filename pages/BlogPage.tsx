@@ -24,7 +24,7 @@ const BlogPage: React.FC<Props> = ({ translations: t }) => {
       
       {/* Blog Title Header with Breadcrumb Style */}
       <section className="relative py-24 bg-gradient-to-b from-[#0F5132]/30 to-transparent border-b border-[#D4AF37]/10">
-        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/islamic-art.png')]"></div>
+        <div className="absolute inset-0 opacity-30 pointer-events-none bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1576764402988-7143f9cca90a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cXVyYW58ZW58MHx8MHx8fDA%3D')]"></div>
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10 animate-fade-up">
           <h1 className="font-cinzel text-5xl sm:text-7xl font-bold text-white mb-6 drop-shadow-xl">
             {b.hero.title}
