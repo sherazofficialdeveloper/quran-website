@@ -20,3 +20,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/1tdItlRndwCFGELXoyRQ8d_
    `npm run dev`
 # Quran-Majeed
 # Quran-Majeed
+# quran-website
