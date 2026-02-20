@@ -15,7 +15,7 @@ const Stats: React.FC<StatsProps> = ({ translations: t }) => {
 
   return (
     <section className="py-24 bg-[#0F5132] relative">
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
         {stats.map((stat, i) => (
           <div key={i} className="text-center group">

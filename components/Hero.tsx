@@ -52,13 +52,13 @@ const Hero: React.FC<HeroProps> = ({ translations: t }) => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
            <a 
-            href="https://wa.me/yournumberhere" 
+            href="https://wa.me/923030713623" 
             target="_blank" 
             rel="noopener noreferrer"> <button className="px-10 py-5 bg-[#D4AF37] text-[#052e1b] rounded-2xl font-bold hover:scale-105 transition-all shadow-xl uppercase tracking-widest text-sm">
               {t.hero.ctaPrimary}
             </button></a>
             <a 
-            href="https://wa.me/yournumberhere" 
+            href="https://wa.me/923030713623" 
             target="_blank" 
             rel="noopener noreferrer"><button className="px-10 py-5 border-2 border-[#D4AF37] text-[#D4AF37] rounded-2xl font-bold hover:bg-[#D4AF37]/10 transition-all uppercase tracking-widest text-sm">
               {t.hero.ctaSecondary}
@@ -106,7 +106,7 @@ const Hero: React.FC<HeroProps> = ({ translations: t }) => {
                </div>
                <p className="text-white/50 text-sm mb-8">{t.hero.pricingCard.details}</p>
              <a 
-            href="https://wa.me/yournumberhere" 
+            href="https://wa.me/923030713623" 
             target="_blank" 
             rel="noopener noreferrer">  <button className="w-full py-5 bg-[#D4AF37] text-[#052e1b] rounded-2xl font-bold text-lg hover:bg-white transition-all shadow-xl">
                  {t.hero.pricingCard.btn}

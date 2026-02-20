@@ -7,13 +7,14 @@ import QaidaPage from './pages/QaidaPage';
 import TajweedPage from './pages/TajweedPage';
 import TafseerPage from './pages/TafseerPage';
 import QiraatPage from './pages/QiraatPage';
+import AboutPage from './pages/AboutPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('en');
-  const [currentPage, setCurrentPage] = useState<'home' | 'qaida' | 'tajweed' | 'tafseer' | 'qiraat' | 'blog' | 'contact'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'qaida' | 'tajweed' | 'tafseer' | 'qiraat' | 'about' | 'blog' | 'contact'>('home');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const t = translations[lang];
 
@@ -51,6 +52,7 @@ const App: React.FC = () => {
         {currentPage === 'tajweed' && <TajweedPage translations={t} />}
         {currentPage === 'tafseer' && <TafseerPage translations={t} />}
         {currentPage === 'qiraat' && <QiraatPage translations={t} />}
+        {currentPage === 'about' && <AboutPage translations={t} />}
         {currentPage === 'blog' && <BlogPage translations={t} />}
         {currentPage === 'contact' && <ContactPage translations={t} />}
       </main>
@@ -72,7 +74,7 @@ const App: React.FC = () => {
         {/* Bottom Right WhatsApp and Call */}
         <div className="absolute bottom-0 right-4 sm:right-8 flex flex-col gap-3 pointer-events-auto">
           <a 
-            href="https://wa.me/yournumberhere" 
+            href="https://wa.me/+923030713623" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform group relative"
@@ -83,7 +85,7 @@ const App: React.FC = () => {
             </svg>
           </a>
           <a 
-            href="tel:+yournumberhere" 
+            href="tel:+923030713623" 
             className="w-14 h-14 sm:w-16 sm:h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-[#052e1b] shadow-2xl hover:scale-110 transition-transform group relative"
           >
             <div className="absolute inset-0 bg-[#D4AF37] rounded-full animate-ping opacity-20" style={{ animationDelay: '0.5s' }}></div>

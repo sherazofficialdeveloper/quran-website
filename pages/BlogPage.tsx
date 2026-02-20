@@ -26,7 +26,7 @@ const BlogPage: React.FC<Props> = ({ translations: t }) => {
       <section className="relative py-24 bg-gradient-to-b from-[#0F5132]/30 to-transparent border-b border-[#D4AF37]/10">
         <div className="absolute inset-0 opacity-30 pointer-events-none bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1576764402988-7143f9cca90a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cXVyYW58ZW58MHx8MHx8fDA%3D')]"></div>
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10 animate-fade-up">
-          <h1 className="font-cinzel text-5xl sm:text-7xl font-bold text-white mb-6 drop-shadow-xl">
+          <h1 className="font-cinzel text-4xl sm:text-6xl font-bold text-[#D4AF37] mb-6 drop-shadow-xl">
             {b.hero.title}
           </h1>
           <nav className="flex justify-center items-center gap-3 text-[#D4AF37] font-bold uppercase tracking-[0.4em] text-xs">
@@ -93,10 +93,8 @@ const BlogPage: React.FC<Props> = ({ translations: t }) => {
                      <h2 className="font-cinzel text-4xl sm:text-6xl text-white font-bold mb-12 leading-tight drop-shadow-2xl">
                         {b.banner.title}
                      </h2>
-                     <a 
-            href="https://wa.me/yournumberhere" 
-            target="_blank" 
-            rel="noopener noreferrer"><button className="px-16 py-7 bg-[#D4AF37] text-[#052e1b] rounded-2xl font-bold text-xl hover:bg-white hover:scale-105 transition-all shadow-2xl gold-glow uppercase tracking-[0.3em]">
+                     <a href="https://wa.me/923030713623" target="_blank" rel="noopener noreferrer">
+                     <button className="md:px-16 py-7 bg-[#D4AF37] text-[#052e1b] rounded-2xl md:font-bold md:text-xl hover:bg-white hover:scale-105 transition-all shadow-2xl gold-glow uppercase tracking-[0.3em]">
                         {b.banner.btn}
                      </button></a> 
                   </div>

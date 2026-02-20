@@ -7,8 +7,73 @@ const en = {
   nav: {
     home: 'Home',
     courses: 'Courses',
+    about: 'About Us',
     blog: 'Blog',
     contact: 'Contact Us',
+  },
+  aboutPage: {
+    hero: {
+      badge: 'Illuminating Hearts',
+      title: 'Guiding Your Soul Through the Light of the Quran',
+      subtitle: 'Welcome to Quran Kareem Academy, a sacred space dedicated to nurturing a deep, spiritual connection with the Divine through authentic Quranic education and character building.',
+      trust: 'Trusted by families worldwide for authentic and dedicated Islamic learning.'
+    },
+    mission: {
+      badge: 'Our Purpose',
+      title: 'Our Mission & Vision',
+      desc: 'At Quran Kareem Academy, our purpose extends beyond mere teaching; we aim to ignite a lifelong love for the Quran in every heart. We believe that Quranic education is the foundation of a successful life and a peaceful soul.',
+      focus: 'We focus on building strong character (Akhlaq), instilling Islamic values, and ensuring that every student understands the beauty of their Deen with sincerity and dedication.'
+    },
+    teacher: {
+      badge: 'Meet Your Teacher',
+      name: 'Muhammad Sajid',
+      title: 'Founder & Lead Instructor',
+      desc: 'With a deep passion for Quranic education and years of experience, Muhammad Sajid has dedicated his life to helping students of all ages master the art of recitation and understand the message of Allah.',
+      values: [
+        { title: 'Patience', desc: 'Every student learns at their own pace, and we honor that journey with gentle guidance.' },
+        { title: 'Sincerity', desc: 'Teaching the Quran is a sacred trust, performed with the purest intentions for the sake of Allah.' },
+        { title: 'Tajweed Mastery', desc: 'A commitment to preserving the beauty and accuracy of every letter and vowel.' },
+        { title: 'Adab & Ethics', desc: 'Instilling respect and proper etiquette towards the Book of Allah and Islamic knowledge.' }
+      ]
+    },
+    services: {
+      badge: 'What We Teach',
+      title: 'Comprehensive Islamic Curriculum',
+      items: [
+        { title: 'Noorani Qaida', desc: 'Lay the perfect foundation for correct recitation by mastering Arabic phonetics and basic rules.' },
+        { title: 'Nazra Quran', desc: 'Develop fluency and confidence in reading the full Quran with proper flow and rhythm.' },
+        { title: 'Hifz-ul-Quran', desc: 'Embark on a transformative journey of memorization with structured support and revision.' },
+        { title: 'Tajweed-ul-Quran', desc: 'Unlock the beauty and accuracy of recitation by mastering the rules of articulation and characteristics of letters.' },
+        { title: 'Masnoon Duas', desc: 'Connect your daily life to the Divine through essential supplications for every occasion.' },
+        { title: 'Seerat-un-Nabi ﷺ', desc: 'Draw inspiration from the perfect character of the Prophet ﷺ to beautify your own conduct.' }
+      ]
+    },
+    philosophy: {
+      badge: 'Our Approach',
+      title: 'Teaching Philosophy',
+      desc: 'We believe in a student-friendly, step-by-step approach that makes learning engaging rather than overwhelming. Whether you are a child starting their first lesson or an adult seeking to perfect their recitation, our environment is one of respect and patience.',
+      points: [
+        'Personalized 1-on-1 attention',
+        'Interactive and engaging lessons',
+        'Focus on both theory and practice',
+        'Comfortable and safe digital environment'
+      ]
+    },
+    reassurance: {
+      badge: 'Your Trust, Our Priority',
+      title: 'Why Families Choose Us',
+      items: [
+        { title: 'Safe Environment', desc: 'A secure and respectful digital space for students of all ages.' },
+        { title: 'Personalized Care', desc: 'Tailored lessons that adapt to individual learning styles and needs.' },
+        { title: 'Moral Values', desc: 'Beyond reading, we emphasize the application of Quranic morals in daily life.' },
+        { title: 'Consistency', desc: 'Disciplined and regular classes to ensure steady progress in your spiritual journey.' }
+      ]
+    },
+    cta: {
+      title: 'Ready to Begin Your Sacred Journey?',
+      subtitle: 'Join our community of learners and experience the transformative power of the Quran.',
+      btn: 'Start Your Free Trial'
+    }
   },
   contact: {
     hero: {
@@ -457,13 +522,11 @@ const en = {
       { title: 'Quran Translation', duration: '8-12 months', level: 'Intermediate' },
       { title: 'Tafseer-ul-Quran', duration: '1-2 years', level: 'Advanced' },
       { title: 'Qiraat Ashra Course', duration: '2-3 years', level: 'Advanced' },
-      { title: 'Arabic Language', duration: '10-12 months', level: 'All Levels' },
       { title: 'Prayer and Duas', duration: '2-3 months', level: 'Beginner' },
       { title: 'Islamic Studies', duration: '6-8 months', level: 'All Levels' },
       { title: 'Seerat-un-Nabi', duration: '4-6 months', level: 'All Levels' },
       { title: 'English Language', duration: '8-10 months', level: 'All Levels' },
-      { title: 'Urdu Language', duration: '6-8 months', level: 'All Levels' },
-      { title: 'Pashto Language', duration: '6-8 months', level: 'All Levels' }
+      { title: 'Urdu Language', duration: '6-8 months', level: 'All Levels' }
     ],
     subtitle: 'Explore our catalog of premium Islamic courses.'
   },
@@ -578,8 +641,73 @@ const ur: typeof en = {
   nav: {
     home: 'ہوم',
     courses: 'کورسز',
+    about: 'ہمارے بارے میں',
     blog: 'بلاگ',
     contact: 'رابطہ کریں',
+  },
+  aboutPage: {
+    hero: {
+      badge: 'دلوں کی روشنی',
+      title: 'قرآن کی روشنی سے اپنی روح کی رہنمائی کریں',
+      subtitle: 'قرآن کریم اکیڈمی میں خوش آمدید، ایک مقدس جگہ جو مستند قرآنی تعلیم اور کردار سازی کے ذریعے اللہ کے ساتھ گہرا روحانی تعلق پیدا کرنے کے لیے وقف ہے۔',
+      trust: 'مستند اور وقف اسلامی تعلیم کے لیے دنیا بھر کے خاندانوں کا بھروسہ۔'
+    },
+    mission: {
+      badge: 'ہمارا مقصد',
+      title: 'ہمارا مشن اور وژن',
+      desc: 'قرآن کریم اکیڈمی میں ہمارا مقصد صرف پڑھانا نہیں ہے؛ ہمارا مقصد ہر دل میں قرآن کے لیے تاحیات محبت پیدا کرنا ہے۔ ہمارا ماننا ہے کہ قرآنی تعلیم ایک کامیاب زندگی اور پرسکون روح کی بنیاد ہے۔',
+      focus: 'ہم مضبوط کردار (اخلاق) سازی، اسلامی اقدار کو راسخ کرنے اور اس بات کو یقینی بنانے پر توجہ دیتے ہیں کہ ہر طالب علم اخلاص اور لگن کے ساتھ اپنے دین کی خوبصورتی کو سمجھے۔'
+    },
+    teacher: {
+      badge: 'اپنے استاد سے ملیں',
+      name: 'محمد ساجد',
+      title: 'بانی اور لیڈ انسٹرکٹر',
+      desc: 'قرآنی تعلیم کے لیے گہرے جذبے اور برسوں کے تجربے کے ساتھ، محمد ساجد نے اپنی زندگی ہر عمر کے طلباء کو تلاوت کے فن میں مہارت حاصل کرنے اور اللہ کے پیغام کو سمجھنے میں مدد کرنے کے لیے وقف کر دی ہے۔',
+      values: [
+        { title: 'صبر', desc: 'ہر طالب علم اپنی رفتار سے سیکھتا ہے، اور ہم نرم رہنمائی کے ساتھ اس سفر کا احترام کرتے ہیں۔' },
+        { title: 'اخلاص', desc: 'قرآن پڑھانا ایک مقدس امانت ہے، جو اللہ کی رضا کے لیے خالص نیت کے ساتھ انجام دی جاتی ہے۔' },
+        { title: 'تجوید میں مہارت', desc: 'ہر حرف اور حرکت کی خوبصورتی اور درستگی کو برقرار رکھنے کا عزم۔' },
+        { title: 'ادب اور اخلاقیات', desc: 'اللہ کی کتاب اور اسلامی علم کے تئیں احترام اور مناسب آداب سکھانا۔' }
+      ]
+    },
+    services: {
+      badge: 'ہم کیا سکھاتے ہیں',
+      title: 'جامع اسلامی نصاب',
+      items: [
+        { title: 'نورانی قاعدہ', desc: 'عربی صوتیات اور بنیادی قواعد میں مہارت حاصل کر کے درست تلاوت کی بہترین بنیاد رکھیں۔' },
+        { title: 'ناظرہ قرآن', desc: 'مناسب روانی اور تال کے ساتھ مکمل قرآن پڑھنے میں مہارت اور اعتماد پیدا کریں۔' },
+        { title: 'حفظ القرآن', desc: 'منظم تعاون اور دہرائی کے ساتھ حفظ کے ایک تبدیلی لانے والے سفر کا آغاز کریں۔' },
+        { title: 'تجوید القرآن', desc: 'حروف کے مخارج اور صفات کے قواعد میں مہارت حاصل کر کے تلاوت کی خوبصورتی اور درستگی کو واضح کریں۔' },
+        { title: 'مسنون دعائیں', desc: 'ہر موقع کے لیے ضروری دعاؤں کے ذریعے اپنی روزمرہ کی زندگی کو اللہ سے جوڑیں۔' },
+        { title: 'سیرت النبی ﷺ', desc: 'اپنے کردار کو خوبصورت بنانے کے لیے نبی اکرم ﷺ کے کامل کردار سے تحریک حاصل کریں۔' }
+      ]
+    },
+    philosophy: {
+      badge: 'ہمارا طریقہ کار',
+      title: 'تعلیمی فلسفہ',
+      desc: 'ہم ایک طالب علم دوست، مرحلہ وار طریقہ کار پر یقین رکھتے ہیں جو سیکھنے کو بوجھ کے بجائے دلچسپ بناتا ہے۔ چاہے آپ پہلا سبق شروع کرنے والے بچے ہوں یا اپنی تلاوت کو مکمل کرنے کے خواہشمند بالغ، ہمارا ماحول احترام اور صبر کا حامل ہے۔',
+      points: [
+        'انفرادی توجہ (ون آن ون)',
+        'دلچسپ اور انٹرایکٹو اسباق',
+        'نظریاتی اور عملی دونوں پہلوؤں پر توجہ',
+        'آرام دہ اور محفوظ ڈیجیٹل ماحول'
+      ]
+    },
+    reassurance: {
+      badge: 'آپ کا بھروسہ، ہماری ترجیح',
+      title: 'خاندان ہمارا انتخاب کیوں کرتے ہیں',
+      items: [
+        { title: 'محفوظ ماحول', desc: 'ہر عمر کے طلباء کے لیے ایک محفوظ اور قابل احترام ڈیجیٹل جگہ۔' },
+        { title: 'انفرادی دیکھ بھال', desc: 'مخصوص اسباق جو انفرادی سیکھنے کے انداز اور ضروریات کے مطابق ہوں۔' },
+        { title: 'اخلاقی اقدار', desc: 'پڑھنے کے علاوہ، ہم روزمرہ کی زندگی میں قرآنی اخلاق کے اطلاق پر زور دیتے ہیں۔' },
+        { title: 'استقامت', desc: 'آپ کے روحانی سفر میں مستقل ترقی کو یقینی بنانے کے لیے باقاعدہ کلاسز۔' }
+      ]
+    },
+    cta: {
+      title: 'کیا آپ اپنے مقدس سفر کا آغاز کرنے کے لیے تیار ہیں؟',
+      subtitle: 'سیکھنے والوں کی ہماری کمیونٹی میں شامل ہوں اور قرآن کی تبدیلی لانے والی طاقت کا تجربہ کریں۔',
+      btn: 'اپنا فری ٹرائل شروع کریں'
+    }
   },
   contact: {
     hero: {

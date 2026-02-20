@@ -27,7 +27,7 @@ const WhatsAppBanner: React.FC<WhatsAppBannerProps> = ({ translations: t }) => {
             
             <div className="flex flex-col items-center gap-8">
               <a 
-                href="https://wa.me/yournumberhere" 
+                href="https://wa.me/923030713623" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-6 px-16 py-8 bg-[#25D366] text-white rounded-3xl text-2xl sm:text-3xl font-bold hover:bg-[#128C7E] transition-all duration-500 transform hover:scale-110 shadow-[0_25px_80px_rgba(37,211,102,0.4)] gold-glow"

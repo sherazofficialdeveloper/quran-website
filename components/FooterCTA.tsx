@@ -41,13 +41,13 @@ const FooterCTA: React.FC<Props> = ({ translations: t }) => {
                  
                  <div className="space-y-4">
                    <a 
-            href="https://wa.me/yournumberhere" 
+            href="https://wa.me/923030713623" 
             target="_blank" 
             rel="noopener noreferrer"> <button className="w-full py-5 bg-[#D4AF37] text-[#052e1b] rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-white transition-all shadow-xl">
                        <span>{t.footerCTA.trialCard.whatsapp}</span>
                     </button></a>
                    <a 
-            href="tel:+yournumberhere"> <button className="w-full mt-5 py-5 border-2 border-[#D4AF37] text-[#D4AF37] rounded-2xl font-bold hover:bg-[#D4AF37]/10 transition-all">
+            href="tel:+923030713623"> <button className="w-full mt-5 py-5 border-2 border-[#D4AF37] text-[#D4AF37] rounded-2xl font-bold hover:bg-[#D4AF37]/10 transition-all">
                        {t.footerCTA.trialCard.call}
                     </button></a>
                     <button className="w-full py-5 text-white/40 hover:text-white transition-colors text-sm">

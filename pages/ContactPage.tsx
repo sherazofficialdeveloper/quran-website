@@ -29,8 +29,8 @@ const ContactPage: React.FC<Props> = ({ translations: t }) => {
   };
 
   const getMethodLink = (index: number) => {
-    const phoneNumber = "YOUR_NUMBER_HERE"; // Replace with actual number
-    const emailAddr = "info@qurankareem.com";
+    const phoneNumber = "+923030713623"; // Replace with actual number
+    const emailAddr = "sajidsajid013@gmail.com";
     switch (index) {
       case 0: return `https://wa.me/${phoneNumber}`; // WhatsApp
       case 1: return `tel:${phoneNumber}`;           // Call
@@ -41,7 +41,7 @@ const ContactPage: React.FC<Props> = ({ translations: t }) => {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const phoneNumber = "YOUR_NUMBER_HERE"; // Replace with actual number
+    const phoneNumber = "+923030713623"; // Replace with actual number
     
     // Construct WhatsApp message
     const whatsappMessage = `*New Inquiry from Quran Kareem Website*%0A%0A` +
@@ -60,12 +60,12 @@ const ContactPage: React.FC<Props> = ({ translations: t }) => {
       
       {/* Hero Header Section */}
       <section className="relative py-24 bg-gradient-to-b from-[#0F5132]/30 to-transparent border-b border-[#D4AF37]/10 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/islamic-art.png')]"></div>
+        <div className="absolute inset-0 opacity-50 pointer-events-none bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1597505495109-7fc35bb64d8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cXVyYW4lMjBpc2xhbWljfGVufDB8fDB8fHww')]"></div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10 animate-fade-up">
           <div className="inline-block px-4 py-1.5 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full text-[#D4AF37] text-[10px] font-bold uppercase tracking-widest mb-8">
             {c.hero.badge}
           </div>
-          <h1 className="font-cinzel text-5xl sm:text-7xl font-bold text-white mb-8 leading-tight">
+          <h1 className="font-cinzel text-4xl sm:text-6xl font-bold text-[#D4AF37] mb-8 leading-tight">
             {c.hero.title}
           </h1>
           <p className="text-white/60 text-lg sm:text-xl font-light leading-relaxed max-w-2xl mx-auto italic">

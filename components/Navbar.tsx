@@ -6,7 +6,7 @@ interface NavbarProps {
   currentLang: Language;
   onLangChange: (lang: Language) => void;
   translations: any;
-  onNavigate: (page: 'home' | 'qaida' | 'tajweed' | 'tafseer' | 'qiraat' | 'blog' | 'contact') => void;
+  onNavigate: (page: 'home' | 'qaida' | 'tajweed' | 'tafseer' | 'qiraat' | 'about' | 'blog' | 'contact') => void;
   currentPage: string;
 }
 
@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentLang, onLangChange, translations
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 lg:space-x-8">
             <button onClick={() => onNavigate('home')} className={navItemClass('home')}>{t.nav.home}</button>
 
             {/* Courses Dropdown (Click Based) */}
@@ -109,6 +109,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentLang, onLangChange, translations
               )}
             </div>
 
+            <button onClick={() => onNavigate('about')} className={navItemClass('about')}>{t.nav.about}</button>
             <button onClick={() => onNavigate('blog')} className={navItemClass('blog')}>{t.nav.blog}</button>
             <button onClick={() => onNavigate('contact')} className={navItemClass('contact')}>{t.nav.contact}</button>
 
@@ -135,15 +136,15 @@ const Navbar: React.FC<NavbarProps> = ({ currentLang, onLangChange, translations
                 </div>
               )}
             </div>
-            <a 
-            href="https://wa.me/yournumberhere" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            <button className="bg-[#D4AF37] text-[#052e1b] px-6 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all uppercase tracking-widest shadow-lg">WhatsApp</button></a>
+
+             <a href="https://wa.me/923030713623" target="_blank" rel="noopener noreferrer">
+             <button onClick={() => onNavigate('contact')} className="bg-[#D4AF37] hidden xl:block text-[#052e1b] px-6 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all uppercase tracking-widest shadow-lg">
+              Whatsapp
+              </button></a>
           </div>
 
           {/* Mobile Menu Toggle Button */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-2">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-[#D4AF37] p-2 bg-[#D4AF37]/10 rounded-lg">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">{isMenuOpen ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /> : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />}</svg>
             </button>
@@ -153,10 +154,11 @@ const Navbar: React.FC<NavbarProps> = ({ currentLang, onLangChange, translations
       
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#052e1b] border-t border-[#D4AF37]/20 px-4 py-8 space-y-6 animate-fade-up shadow-2xl max-h-screen overflow-y-auto">
+        <div className="lg:hidden bg-[#052e1b] border-t border-[#D4AF37]/20 px-4 py-8 space-y-6 animate-fade-up shadow-2xl max-h-screen overflow-y-auto">
            {/* Navigation Links */}
            <div className="space-y-2">
               <button onClick={() => { onNavigate('home'); setIsMenuOpen(false); }} className={`block w-full text-left py-3 px-4 rounded-xl uppercase font-bold text-sm ${currentPage === 'home' ? 'bg-[#D4AF37] text-[#052e1b]' : 'text-white/80'}`}>{t.nav.home}</button>
+              <button onClick={() => { onNavigate('about'); setIsMenuOpen(false); }} className={`block w-full text-left py-3 px-4 rounded-xl uppercase font-bold text-sm ${currentPage === 'about' ? 'bg-[#D4AF37] text-[#052e1b]' : 'text-white/80'}`}>{t.nav.about}</button>
               <button onClick={() => { onNavigate('blog'); setIsMenuOpen(false); }} className={`block w-full text-left py-3 px-4 rounded-xl uppercase font-bold text-sm ${currentPage === 'blog' ? 'bg-[#D4AF37] text-[#052e1b]' : 'text-white/80'}`}>{t.nav.blog}</button>
               <button onClick={() => { onNavigate('contact'); setIsMenuOpen(false); }} className={`block w-full text-left py-3 px-4 rounded-xl uppercase font-bold text-sm ${currentPage === 'contact' ? 'bg-[#D4AF37] text-[#052e1b]' : 'text-white/80'}`}>{t.nav.contact}</button>
            </div>
@@ -195,12 +197,12 @@ const Navbar: React.FC<NavbarProps> = ({ currentLang, onLangChange, translations
 
            {/* Enroll Now Mobile Button */}
            <div className="pt-6">
-              <button 
+               <a href="https://wa.me/923030713623" target="_blank" rel="noopener noreferrer"><button 
                 onClick={() => { onNavigate('contact'); setIsMenuOpen(false); }}
                 className="w-full py-5 bg-[#D4AF37] text-[#052e1b] rounded-2xl font-black uppercase tracking-[0.2em] shadow-xl text-lg animate-pulse"
               >
-                WhatsApp
-              </button>
+                Whatsapp
+              </button></a>
            </div>
         </div>
       )}
